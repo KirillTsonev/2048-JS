@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>2048</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic-ext"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mainHeading">2048</h1>
+      <div class="header__container">
+        <div class="header__text">Score:<br /><span class="header__score">0</span></div>
+        <div class="header__help">?</div>
+        <div class="button button-newGame">New Game</div>
+        <div class="header__text">High-score :<br /><span class="header__highscore">0</span></div>
+      </div>
+      <div class="wrapper">
+        <div class="wrapper__tile-outer">
+          <div class="wrapper__tile vertical1 horizontal1"></div>
+        </div>
+        <div class="wrapper__tile-outer">
+          <div class="wrapper__tile vertical2 horizontal1"></div>
+        </div>
+        <div class="wrapper__tile-outer">
+          <div class="wrapper__tile vertical3 horizontal1"></div>
+        </div>
+        <div class="wrapper__tile-outer">
+          <div class="wrapper__tile vertical4 horizontal1"></div>
+        </div>
+        <div class="wrapper__tile-outer">
+          <div class="wrapper__tile vertical1 horizontal2"></div>
+        </div>
+        <div class="wrapper__tile-outer">
+          <div class="wrapper__tile vertical2 horizontal2"></div>
+        </div>
+        <div class="wrapper__tile-outer">
+          <div class="wrapper__tile vertical3 horizontal2"></div>
+        </div>
+        <div class="wrapper__tile-outer">
+          <div class="wrapper__tile vertical4 horizontal2"></div>
+        </div>
+        <div class="wrapper__tile-outer">
+          <div class="wrapper__tile vertical1 horizontal3"></div>
+        </div>
+        <div class="wrapper__tile-outer">
+          <div class="wrapper__tile vertical2 horizontal3"></div>
+        </div>
+        <div class="wrapper__tile-outer">
+          <div class="wrapper__tile vertical3 horizontal3"></div>
+        </div>
+        <div class="wrapper__tile-outer">
+          <div class="wrapper__tile vertical4 horizontal3"></div>
+        </div>
+        <div class="wrapper__tile-outer">
+          <div class="wrapper__tile vertical1 horizontal4"></div>
+        </div>
+        <div class="wrapper__tile-outer">
+          <div class="wrapper__tile vertical2 horizontal4"></div>
+        </div>
+        <div class="wrapper__tile-outer">
+          <div class="wrapper__tile vertical3 horizontal4"></div>
+        </div>
+        <div class="wrapper__tile-outer">
+          <div class="wrapper__tile vertical4 horizontal4"></div>
+        </div>
+      </div>
+      <div class="modal__win__overlay hide">
+        <div class="modal__win hide">
+          <div
+            class="modal__close"
+            data-close
+          >
+            &times;
+          </div>
+          <div class="modal__win__congrats">You won!</div>
+          <div class="score">Score: <span class="modal__score">0</span></div>
+          <div class="win__buttons">
+            <div class="button button-continueGame">Continue</div>
+            <div class="button button-newGameNoConf">New Game</div>
+          </div>
+        </div>
+      </div>
+      <div class="modal__lose__overlay hide">
+        <div class="modal__lose hide">
+          <div
+            class="modal__close"
+            data-close
+          >
+            &times;
+          </div>
+          <div class="modal__lose__congrats">You lost...</div>
+          <div class="score">Score: <span class="modal__score">0</span></div>
+          <div class="button button-newGameNoConf">New Game</div>
+        </div>
+      </div>
+      <div class="modal__help__overlay hide">
+        <div class="modal__help hide">
+          <div
+            class="modal__close"
+            data-close
+          >
+            &times;
+          </div>
+          <div class="modal__help__header">How to play:</div>
+          <div class="modal__help__desc">
+            Press WASD or ↑←↓→ (PC) or swipe (Phone/Tablet) to move the tiles. Tiles with the same number merge into one when they
+            touch. Add them up to reach 2048!
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
